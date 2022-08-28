@@ -1,6 +1,29 @@
+@font-face {
+  font-family:'Aarvark-Cafe';
+  src:url('assets/Aarvark-Cafe.ttf.woff') format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'Prestige Elite Std Bold';
+  src: url('assets/PrestigeEliteStd-Bd.woff') format('woff');
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Futura Std Bold';
+  font-style: normal;
+  font-weight: normal;
+  src:url('assets/FuturaStdBold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Romela', sans-serif;
+    src:url('http://fonts.cdnfonts.com/css/romela');
+    }
+  
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Aarvark-Cafe', 'Prestige Elite Std Bold', 'Futura Std Bold', 'Romela' 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +33,24 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.logo { 
+  font-family:'Aarvark-Cafe';
+}  
+
+p{
+  font-family: 'Prestige Elite Std Bold';
+}
+
+h2{
+  font-family: 'Romela';
+}
+
+h3{
+  font-family: 'Futura Std Bold';
+}
+
+nav{
+  background: linear-gradient(180deg,#f2eaf2 50%, #3b1a5e 50%);
 }

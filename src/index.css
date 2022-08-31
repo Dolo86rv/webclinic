@@ -20,7 +20,11 @@
     font-family: 'Romela', sans-serif;
     src:url('http://fonts.cdnfonts.com/css/romela');
     }
-  
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}    
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Aarvark-Cafe', 'Prestige Elite Std Bold', 'Futura Std Bold', 'Romela' 'Segoe UI', 'Roboto', 'Oxygen',
@@ -28,6 +32,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:"#f2eaf2";
 }
 
 code {
@@ -39,8 +44,8 @@ code {
   font-family:'Aarvark-Cafe';
 }  
 
-p{
-  font-family: 'Prestige Elite Std Bold';
+.font{
+  font-family: 'Romela';
 }
 
 h2{
@@ -50,6 +55,15 @@ h2{
 h3{
   font-family: 'Futura Std Bold';
 }
+.redes{
+  background-color: "#3b1a5e";
+}
+header{
+  background-color: "#3b1a5e";
+}
+/*.fondo{
+  background-image: url("./img/quiromasaje-1024x455.png");
+}*/
 
 /*nav{
   background: linear-gradient(180deg,#f2eaf2 50%, #3b1a5e 50%);

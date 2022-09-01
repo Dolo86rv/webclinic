@@ -16,6 +16,7 @@ module.exports = {
         '120px':'7.5rem',
         '10px':'0.625rem',
         '5px':'0.313rem',
+        '104px':'6.5rem',
       },
       backgroundImage: {
         'head-lienzo': "url('../img/Lienzo-top160.png')",

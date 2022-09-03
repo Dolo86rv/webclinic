@@ -4,10 +4,10 @@ import { Home } from '../Home';
 
 export const Layout = () => {
   return (
-    <div className="overflow-y-hidden w-full bg-c-fondo">
+    <>
       <Header />
       <Home />
-    </div>
+    </>
   )
 }
 

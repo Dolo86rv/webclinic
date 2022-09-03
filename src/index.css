@@ -22,9 +22,10 @@
     }
 
 * {
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
-}    
+}  
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Aarvark-Cafe', 'Prestige Elite Std Bold', 'Futura Std Bold', 'Romela' 'Segoe UI', 'Roboto', 'Oxygen',
@@ -32,7 +33,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:"#f2eaf2";
+  background-color:'#f2eaf2';
+  min-height: 100vh;
+  width: 100%;
 }
 
 code {
@@ -56,10 +59,17 @@ h3{
   font-family: 'Futura Std Bold';
 }
 .redes{
-  background-color: "#3b1a5e";
+  background-color: '#3b1a5e';
 }
 header{
-  background-color: "#3b1a5e";
+  background-color: '#3b1a5e';
+}
+.hero-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: calc(100vh - 100px);
 }
 /*nav{
   background-image: url("./img/Lienzo-top.png");

@@ -17,11 +17,16 @@ module.exports = {
         '10px':'0.625rem',
         '5px':'0.313rem',
         '104px':'6.5rem',
+        '88px': '5.5rem'
       },
       backgroundImage: {
         'head-lienzo': "url('../img/Lienzo-top160.png')",
         'footer-lienzo': "url('../img/Lienzo-bot160.png')",
-      }
+      },
+      screens: {
+        's': '330px',
+        // => @media (min-width: 330px) { ... }
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],

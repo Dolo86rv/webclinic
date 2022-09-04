@@ -27,6 +27,9 @@ module.exports = {
         's': '330px',
         // => @media (min-width: 330px) { ... }
       },
+      fontSize: {
+        's': '0.5rem',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],

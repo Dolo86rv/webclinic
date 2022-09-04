@@ -19,7 +19,10 @@
   @font-face {
     font-family: 'Romela', sans-serif;
     src:url('http://fonts.cdnfonts.com/css/romela');
-    }
+  }
+  @font-face {font-family: "Untitled Sans Regular";
+    src: url('assets/Untitled Sans Regular.woff'); 
+  }
 
 * {
   padding: 0;
@@ -28,7 +31,7 @@
 }  
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Aarvark-Cafe', 'Prestige Elite Std Bold', 'Futura Std Bold', 'Romela' 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont,'Untitled Sans Regular', 'Aarvark-Cafe', 'Prestige Elite Std Bold', 'Futura Std Bold', 'Romela', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -42,12 +45,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.texto1{
+  font-family:'Untitled Sans Regular';
+}
 
 .logo { 
   font-family:'Aarvark-Cafe';
 }  
 
-.font{
+.texto2{
   font-family: 'Romela';
 }
 

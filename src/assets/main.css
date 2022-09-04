@@ -612,6 +612,9 @@ select {
 .fixed {
   position: fixed;
 }
+.absolute {
+  position: absolute;
+}
 .top-0 {
   top: 0px;
 }
@@ -627,20 +630,29 @@ select {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+.ml-2 {
+  margin-left: 0.5rem;
+}
 .ml-1 {
   margin-left: 0.25rem;
 }
 .mr-4 {
   margin-right: 1rem;
 }
-.ml-2 {
-  margin-left: 0.5rem;
-}
 .ml-96 {
   margin-left: 24rem;
 }
 .mt-14 {
   margin-top: 3.5rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
+}
+.mt-96 {
+  margin-top: 24rem;
 }
 .flex {
   display: flex;
@@ -657,17 +669,32 @@ select {
 .h-14 {
   height: 3.5rem;
 }
+.h-full {
+  height: 100%;
+}
 .w-full {
   width: 100%;
 }
 .flex-none {
   flex: none;
 }
+.flex-grow {
+  flex-grow: 1;
+}
+.flex-col {
+  flex-direction: column;
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
+.items-end {
+  align-items: flex-end;
+}
 .items-center {
   align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
 }
 .justify-between {
   justify-content: space-between;
@@ -701,6 +728,9 @@ select {
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
+.object-cover {
+  object-fit: cover;
+}
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -715,24 +745,31 @@ select {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .font-bold {
   font-weight: 700;
 }
-.text-c-malva {
-  --tw-text-opacity: 1;
-  color: rgb(59 26 94 / var(--tw-text-opacity));
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 .text-c-fondo {
   --tw-text-opacity: 1;
   color: rgb(242 234 242 / var(--tw-text-opacity));
+}
+.text-c-malva {
+  --tw-text-opacity: 1;
+  color: rgb(59 26 94 / var(--tw-text-opacity));
 }
 .opacity-75 {
   opacity: 0.75;
@@ -806,7 +843,16 @@ select {
     height: 3.5rem;
   }
 
-  .s\:flex-nowrap {
-    flex-wrap: nowrap;
+  .s\:items-center {
+    align-items: center;
+  }
+
+  .s\:justify-center {
+    justify-content: center;
+  }
+
+  .s\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }

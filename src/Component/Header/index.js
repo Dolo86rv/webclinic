@@ -5,45 +5,14 @@ import instagram from '../../img/instagram-28x.webp'
 import whatsapp from '../../img/whatsapp-28x28.webp'
 import twitter from '../../img/twitt-28x28.webp'
 import facebook from '../../img/facebok-28x28.webp'
-import Menu from '../../img/menu-ham.png'
 import { Fecha } from '../Fecha'
+import { Navbar } from './navbar'
 //import cuerpo from '../../img/cuerpo160x79.png'
-const menu=[{
-  id:'home',
-  description:'Home',
-  href:'/',
-  subMenu:[]
-},
-{
-  id:'servicio',
-  description:'Servicios',
-  href:'/servicio',
-  subMenu:[]
-},
-{
-  id:'nosotros',
-  description:'Sobre nosotros',
-  href:'/nosotros',
-  subMenu:[]
-},
-{
-  id:'contacto',
-  description:'Contacto',
-  href:'/contacto',
-  subMenu:[]
-},
-{
-  id:'solicitarServicio',
-  description:'Solicitar servicio',
-  href:'/solicitarservicio',
-  subMenu:[]
-},
-]
 
 export const Header = () => {
   
   return (
-    <header className="header fixed top-0 h-36 s:h-28 w-full">
+    <header className="header fixed top-0 h-36 s:h-28 w-full z-50 overflow-hidden">
       <div className="flex justify-between flex-wrap h-20 s:h-14 items-center bg-c-malva ">
         <div className="flex justify-between items-center ml-1 sm:ml-4">
           <Link className="flex-none" to='/'>
@@ -69,18 +38,7 @@ export const Header = () => {
           </button>
         </form>
       </div>
-      <nav className="flex justify-between items-center h-14 bg-c-fondo bg-opacity-50">
-        <a className="logo text-3xl text-c-malva ml-2 pb-2 sm:text-4xl sm:ml-20 sm:mr-2" href='/'>Quiromasaje</a>
-        <ul className="hidden ml-96 sm:flex">
-          {menu.map((item)=>(
-            <Link key={item.id} to={item.href} className={`${ item.description ==='Home' ? "bg-orange-200"
-            : ""} texto2 text-xl font-bold px-4 opacity-75 hover:bg-orange-200 text-c-malva`}><strong className="">{item.description}</strong></Link>
-          ))}
-        </ul>
-        <div className="mx-2 flex-none">
-          <img src={Menu} alt="" className="sm:hidden px-2"/>
-        </div>
-      </nav>   
+      <Navbar />
     </header>
   )
 }

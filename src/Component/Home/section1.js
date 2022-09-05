@@ -26,19 +26,19 @@ const listData=[
 
 export const Section1 = () => {
   return (
-    <div className="mt-24 mb-20">
-      <h1 className="text-center text-c-malva text-xl pb-24 sm:text-4xl font-bold">¿Qué sabes de quiromasaje?</h1>
-      <div className="flex flex-wrap justify-between mx-0 sm:mx-32">
+    <div className="pt-20">
+      <h1 className="text-center text-c-malva text-xl pb-24 font-medium sm:text-4xl">¿Qué sabes de quiromasaje?</h1>
+      <div className="flex flex-wrap justify-between px-8 mx-0 sm:mx-20">
       {listData.map((item)=>(
-      <div key={item.id} className="max-w-md my-2 bg-slate-100 rounded-xl shadow-md overflow-hidden">
-        <div className="">
+      <div key={item.id} className="max-w-sm my-2 bg-slate-100 rounded-xl shadow-md overflow-hidden">
+        <div>
           { item.id === 'definicion' ?
             <div className="md:shrink-0">
-              <img className="h-48 w-full object-cover" src={Quiro1} alt="data" />              
+              <img className="h-48 w-full object-cover" src={Quiro2} alt="data" />              
             </div>
           : item.id === 'beneficios' ?
             <div className="md:shrink-0">
-              <img className="h-48 w-full object-cover" src={Quiro2} alt="data" />              
+              <img className="h-48 w-full object-cover" src={Quiro1} alt="data" />              
             </div>
           : <div className="md:shrink-0">
               <img className="h-48 w-full object-cover" src={Quiro3} alt="data" />              

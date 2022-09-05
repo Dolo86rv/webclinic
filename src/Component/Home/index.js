@@ -14,15 +14,15 @@ export const Home = () => {
   
 
   return (
-    <div className="flex flex-col flex-grow ">
-      <div className="flex flex-col justify-end items-end mt-14 h-full s:justify-center s:items-center ">
-          <div className="shrink-0">
+    <div className="flex-grow mt-14">
+      <div className="flex flex-col justify-end items-end max-w-xs overflow-hidden s:max-w-full s:justify-center s:items-center ">
+          <div className="w-full">
             <img className="object-cover" src={chiromassage} alt='' width='100%' /> 
           </div>
-          <div className="absolute mt-8 mb-20">
-            <p className="texto2 text-xl font-bold text-c-fondo tracking-wider flex-none sm:text-6xl">Salud y bienestar al alcance de todos...</p>
+          <div className="absolute p-8 z-0">
+            <p className="texto2 text-xl font-bold text-c-fondo tracking-wider flex-none sm:text-4xl md:text-6xl">Salud y bienestar al alcance de todos...</p>
           </div>
-          <div className='absolute mt-96'>
+          <div className='absolute mt-96 hidden sm:block'>
             <Link to='/'>
               <img className="" src={arrow} alt="" width={30} height={30} />
             </Link>

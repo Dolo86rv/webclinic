@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Quiro1 from '../../img/quiro1.webp'
 import Quiro2 from '../../img/quiro2.webp'
 import Quiro3 from '../../img/quiro3.webp'
@@ -7,7 +8,7 @@ const listData=[
   {
     id:'definicion',
     title:'Definición',
-    description:'El "quiromasaje" es un método de exploración y de tratamiento manual, aplicado sobre la cubierta corporal y trasmitido por la presión mecánica de las manos a los diferentes órganos y tejidos del cuerpo humano, que tiene a la vez, efectos reguladores sobre el dolor, la sensación general de energía, los estados de ánimo, el cansancio y en general sobre la psique.',
+    description:'El "quiromasaje" es un método de exploración y de tratamiento manual, aplicado sobre la cubierta corporal y trasmitido por la presión mecánica de las manos a los diferentes órganos y tejidos del cuerpo humano, que tiene a la vez, efectos reguladores sobre el dolor, los estados de ánimo, el cansancio...',
     href:'/definicion',
     },
   {
@@ -19,7 +20,7 @@ const listData=[
   {
     id:'contraindicaciones',
     title:'Contraindicaciones',
-    description:'Durante los tres primeros meses del embarazo. Enfermedades infecciosas de la piel y otras no infecciosas generalizadas. Úlceras por decúbito y quemaduras. Enfermedades vasculares inflamatorias inflamaciones de los ganglios linfáticos y cadenas ganglionares.',
+    description:'Está contraindicada durante los tres primeros meses del embarazo. Enfermedades infecciosas de la piel y otras no infecciosas generalizadas. Úlceras por decúbito y quemaduras. Enfermedades vasculares inflamatorias inflamaciones de los ganglios linfáticos y cadenas ganglionares.',
     href:'/contraindicaciones',
   },
 ]
@@ -45,8 +46,11 @@ export const Section1 = () => {
             </div>
           }
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">{item.title}</div>
-            <p className="mt-2 text-slate-500">{item.description}</p>
+            <div className="texto1 text-center uppercase tracking-wide text-sm text-c-malva font-semibold">{item.title}</div>
+            <p className="mt-2 text-slate-500 justify-center items-center">{item.description}</p>
+          </div>
+          <div className="self-end mb-4 ml-60">
+            <Link to='/' className="bg-c-malva text-c-fondo rounded-md py-2 px-4 hover:opacity-50">Leer más</Link>
           </div>
         </div>
       </div>

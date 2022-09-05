@@ -40,8 +40,7 @@ export const Fecha = () => {
         }
     }
     return (
-    <div className="ml-2 text1 text-xs text-c-fondo opacity-75">
+    <div className="ml-8 text-sm text-c-fondo opacity-50">
         {fecha()}
     </div>
-  )
-}
+)}

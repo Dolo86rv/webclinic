@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Quiro1 from '../../img/quiro1.webp'
 import Quiro2 from '../../img/quiro2.webp'
 import Quiro3 from '../../img/quiro3.webp'
+import { ReadMore } from '../Assistant/buttonread'
 
 const listData=[
   {
@@ -27,7 +27,7 @@ const listData=[
 
 export const Section1 = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-20" id="section1">
       <h1 className="text-center text-c-malva text-xl pb-24 font-medium sm:text-4xl">¿Qué sabes de quiromasaje?</h1>
       <div className="flex flex-wrap justify-between px-8 mx-0 sm:mx-20">
       {listData.map((item)=>(
@@ -50,7 +50,7 @@ export const Section1 = () => {
             <p className="mt-2 text-slate-500 justify-center items-center">{item.description}</p>
           </div>
           <div className="self-end mb-4 ml-60">
-            <Link to='/' className="bg-c-malva text-c-fondo rounded-md py-2 px-4 hover:opacity-50">Leer más</Link>
+            <ReadMore />
           </div>
         </div>
       </div>

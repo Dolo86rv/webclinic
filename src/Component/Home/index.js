@@ -1,8 +1,9 @@
 import React from 'react'
 import chiromassage from '../../img/quiromasaje-1440x455.webp'
-import arrow from '../../img/arrow_down.svg'
-import { HashLink as Link } from 'react-router-hash-link'
+//import arrow from '../../img/arrow_down.svg'
+//import { HashLink as Link } from 'react-router-hash-link'
 import { Section1 } from './section1'
+import { ReadMore } from '../Assistant/buttonread'
 //import { Picture }  from 'react-responsive-picture'
 //import { Background } from 'react-imgix'
 //import chiro250 from '../../img/quiromasaje-250.avif'
@@ -23,9 +24,7 @@ export const Home = () => {
             <p className="texto2 text-xl font-bold text-c-fondo tracking-wider flex-none sm:text-4xl md:text-6xl">Salud y bienestar al alcance de todos...</p>
           </div>
           <div className='absolute mt-96 hidden sm:block'>
-            <Link to='/'>
-              <img className="" src={arrow} alt="" width={30} height={30} />
-            </Link>
+            <ReadMore />
           </div>
       </div>  
       <Section1 />  
@@ -49,4 +48,7 @@ export const Home = () => {
 
         <img src={chiromassage} alt='' sizes='100vw' />
       </picture>
+      <Link to='/'>
+              <img className="" src={arrow} alt="" width={30} height={30} />
+      </Link>
       */

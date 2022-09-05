@@ -702,6 +702,9 @@ select {
 .h-48 {
   height: 12rem;
 }
+.h-screen {
+  height: 100vh;
+}
 .w-full {
   width: 100%;
 }
@@ -720,10 +723,7 @@ select {
 .flex-none {
   flex: none;
 }
-.flex-1 {
-  flex: 1 1 0%;
-}
-.grow {
+.flex-grow {
   flex-grow: 1;
 }
 .flex-col {

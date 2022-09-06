@@ -1,7 +1,5 @@
 import React from 'react'
 import chiromassage from '../../img/quiromasaje-1440x455.webp'
-//import arrow from '../../img/arrow_down.svg'
-//import { HashLink as Link } from 'react-router-hash-link'
 import { Section1 } from './section1'
 import { ReadMore } from '../Assistant/buttonread'
 //import { Picture }  from 'react-responsive-picture'
@@ -20,7 +18,7 @@ export const Home = () => {
           <div className="w-full">
             <img className="object-cover" src={chiromassage} alt='' width='100%' /> 
           </div>
-          <div className="absolute p-8 z-0">
+          <div className="absolute p-8">
             <p className="texto2 text-xl font-bold text-c-fondo tracking-wider flex-none sm:text-4xl md:text-6xl">Salud y bienestar al alcance de todos...</p>
           </div>
           <div className='absolute mt-96 hidden sm:block'>

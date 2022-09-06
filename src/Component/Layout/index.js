@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Servicio } from '../Servicios'
 import { Footer } from '../Footer'
 import { Contact } from '../Contact'
+import { Login } from '../Login'
 
 export const Layout = () => {
   return (
@@ -15,6 +16,7 @@ export const Layout = () => {
             <Route exact path='/' element={<Home />}/>
             <Route exact path='/servicio' element={<Servicio />}/>
             <Route exact path='/contact' element={<Contact />}/>
+            <Route exact path='/login' element={<Login />}/>
           </Routes>
         <Footer />
       </BrowserRouter>

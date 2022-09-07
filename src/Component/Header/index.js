@@ -1,13 +1,13 @@
 import React from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
-//import { format } from 'fecha';
 import instagram from '../../img/instagram-28x.webp'
 import whatsapp from '../../img/whatsapp-28x28.webp'
 import twitter from '../../img/twitt-28x28.webp'
 import facebook from '../../img/facebok-28x28.webp'
 import { Fecha } from '../Fecha'
 import { Navbar } from './navbar'
-//import cuerpo from '../../img/cuerpo160x79.png'
+import { Button } from '../Assistant/buttonPurple'
+import { ButtonWhite } from '../Assistant/buttonWhite'
 
 export const Header = () => {
   
@@ -29,14 +29,10 @@ export const Header = () => {
           </Link>
         <Fecha />
         </div>
-        <form className="mr-4">
-          <button className="bg-white border border-c-fondo rounded-md mx-3 hover:bg-transparent s:mb-0">
-            <strong className="texto1 px-2 font-bold text-c-malva hover:text-c-fondo">Buscar</strong>
-          </button>
-          <button className="ml-2 my-3 border border-c-fondo rounded-md hover:bg-c-fondo s:my-0 s:ml-0">
-            <strong className="texto1 px-2 font-bold text-c-fondo hover:text-c-malva">Login in</strong>
-          </button>
-        </form>
+        <div className="mr-4">
+          <ButtonWhite text="Buscar" />
+          <Button text="Login in"  />
+        </div>
       </div>
       <Navbar />
     </header>

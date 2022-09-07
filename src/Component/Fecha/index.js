@@ -16,7 +16,7 @@ export const Fecha = () => {
         return fechaActual.toString()
     }
     return (
-    <div className="ml-8 text-sm text-c-fondo opacity-50">
+    <div className="ml-4 sm:ml-8 text-sm text-c-fondo opacity-50">
         {fecha()}
     </div>
 )}

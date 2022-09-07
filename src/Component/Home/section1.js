@@ -50,7 +50,7 @@ export const Section1 = () => {
             <p className="mt-2 text-slate-500 justify-center items-center">{item.description}</p>
           </div>
           <div className="self-end mb-4 ml-60">
-            <Button text="Leer más" />
+            <Button text="Leer más" dir='/'/>
           </div>
         </div>
       </div>

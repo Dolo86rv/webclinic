@@ -8,13 +8,14 @@ import { Fecha } from '../Fecha'
 import { Navbar } from './navbar'
 import { Button } from '../Assistant/buttonPurple'
 import { ButtonWhite } from '../Assistant/buttonWhite'
+//import { Login } from '../Login'
 
 export const Header = () => {
   
   return (
-    <header className="header fixed top-0 h-36 s:h-28 w-full z-50 overflow-hidden">
-      <div className="flex justify-between flex-wrap h-20 s:h-14 items-center bg-c-malva ">
-        <div className="flex justify-between items-center ml-1 sm:ml-4">
+    <header className="header fixed top-0 w-full h-fit z-50 overflow-hidden">
+      <div className="flex flex-col justify-between max-h-56 bg-c-malva sm:h-14 sm:flex-row sm:items-center">
+        <div className="flex items-center ml-2 sm:ml-4 ">
           <Link className="flex-none" to='/'>
             <img className=" " src={facebook} width={35} height={35} alt=''/>
           </Link> 
@@ -27,11 +28,11 @@ export const Header = () => {
           <Link className="flex-none" to='/'>
             <img className="" src={instagram} width={20} height={20} alt='' />
           </Link>
-        <Fecha />
         </div>
-        <div className="mr-4">
-          <ButtonWhite text="Buscar" />
-          <Button text="Login in"  />
+        <Fecha />
+        <div className="ml-1 my-4 sm:ml-0 sm:my-1 mr-4">
+          <ButtonWhite text="Buscar" dir='/' />
+          <Button text="Login in" dir='/'  />
         </div>
       </div>
       <Navbar />

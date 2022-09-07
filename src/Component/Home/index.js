@@ -13,7 +13,7 @@ export const Home = () => {
   
 
   return (
-    <div className="flex-grow mt-14">
+    <div className="flex-grow mt-[111px] sm:mt-14 max-w-[1440]">
       <div className="flex flex-col justify-end items-end max-w-xs overflow-hidden s:max-w-full s:justify-center s:items-center ">
           <div className="w-full">
             <img className="object-cover" src={chiromassage} alt='' width='100%' /> 
@@ -21,8 +21,8 @@ export const Home = () => {
           <div className="absolute p-8">
             <p className="texto2 text-xl font-bold text-c-fondo tracking-wider flex-none sm:text-4xl md:text-6xl">Salud y bienestar al alcance de todos...</p>
           </div>
-          <div className='absolute mt-96 hidden sm:block'>
-            <Button text="Leer más" />
+          <div className="absolute mt-96 hidden sm:block py-1 bg-c-malva rounded opacity-75">
+            <Button text="Leer más" dir='#section1' />
           </div>
       </div>  
       <Section1 />  

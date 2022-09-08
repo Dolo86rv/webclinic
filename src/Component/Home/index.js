@@ -2,6 +2,7 @@ import React from 'react'
 import chiromassage from '../../img/quiromasaje-1440x455.webp'
 import { Section1 } from './section1'
 import { Button } from '../Assistant/buttonPurple'
+import { ButtonTransparent } from '../Assistant/buttonTransparent'
 //import { Picture }  from 'react-responsive-picture'
 //import { Background } from 'react-imgix'
 //import chiro250 from '../../img/quiromasaje-250.avif'
@@ -21,8 +22,8 @@ export const Home = () => {
           <div className="absolute p-8">
             <p className="texto2 text-xl font-bold text-c-fondo tracking-wider flex-none sm:text-4xl md:text-6xl">Salud y bienestar al alcance de todos...</p>
           </div>
-          <div className="absolute mt-96 hidden sm:block py-1 bg-c-malva rounded opacity-75">
-            <Button text="Leer más" dir='#section1' />
+          <div className="absolute mt-96 hidden sm:block py-1">
+            <ButtonTransparent text="Leer más" dir='#section1' />
           </div>
       </div>  
       <Section1 />  

@@ -1,5 +1,5 @@
-import React from 'react'
-import { HashLink as Link} from 'react-router-hash-link'
+import React, { useState } from 'react'
+//import { HashLink as Link} from 'react-router-hash-link'
 import { Menu } from '@headlessui/react'
 import { Fragment } from 'react'
 
@@ -11,7 +11,12 @@ const links = [
 ]
 
 export const Login = () => {
-    return (
+  const [active, setActive]=useState(false)
+  
+  const handleClick=()=>{
+    setActive(!active)
+  }
+  return (
         <div className="mr-8">
         <Menu>
       <Menu.Button>Options</Menu.Button>
@@ -21,6 +26,7 @@ export const Login = () => {
           <Menu.Item key={link.href} as={Fragment}>
             {({ active }) => (
               <a
+                onClick={handleClick}
                 href={link.href}
                 className={`${
                   active ? 'bg-blue-500 text-white' : 'bg-white text-black'

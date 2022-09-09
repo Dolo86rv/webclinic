@@ -18,10 +18,10 @@ export const Header = () => {
       <div className="flex flex-col justify-between max-h-56 bg-c-malva sm:h-14 sm:flex-row sm:items-center">
         <div className="flex items-center ml-2 sm:ml-4 ">
           <Link className="flex-none" to='/'>
-            <img className=" " src={facebook} width={35} height={35} alt=''/>
+            <img className=" " src={facebook} width={40} height={40} alt=''/>
           </Link> 
           <Link className="pr-4 flex-none" to='/'>
-            <img className="" src={twitter} width={30} height={30} alt='' />
+            <img className="" src={twitter} width={35} height={35} alt='' />
           </Link>
           <Link className="pr-4 flex-none" to='/'>
             <img className="" src={whatsapp} width={20} height={20} alt='' />

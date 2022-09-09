@@ -26,6 +26,11 @@ module.exports = {
       screens: {
         's': '330px',
         // => @media (min-width: 330px) { ... }
+        '1s': '412px',
+        // => @media (min-width: 412px) { ... }
+        '2s': '325px',
+        '3s': '298px',
+        '4s':'258px'
       },
       fontSize: {
         's': '0.5rem',

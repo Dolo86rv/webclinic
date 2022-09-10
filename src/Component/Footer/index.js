@@ -1,21 +1,18 @@
 import React from 'react'
-import { HashLink as Link } from 'react-router-hash-link'
-import { TabRedsocial } from '../Assistant/tabredsocial'
+import { AboutUs } from './aboutus'
+import { Contact } from './contact'
+import { Copyrigth } from './copyrigth'
+import { Service } from './service'
 
 export const Footer = () => {
   return (
     <footer className="bg-c-malva mt-12 sticky top-full">
-      <div className="mt-4 ml-2 px-4 sm:ml-20 sm:mt-2 sm:mr-2">
-        <Link className="logo text-3xl text-c-fondo pb-2 sm:text-4xl" to='/'>Quiromasaje</Link>
+      <div className=" max-w-full flex flex-col justify-between items-center mt-4 mx-2 sm:mx-20 sm:mt-6 sm:flex-row ">
+        <AboutUs />
+        <Service />
+        <Contact />
       </div>
-      <div className="flex flex-col justify-between py-6 px-4 ml-2 sm:flex-row sm:px-14 sm:pt-10 md:pb-6">
-          <p className="items-center font-medium text-xs text-white not-italic">Copyright © 2022.</p>
-          <div className="flex flex-col md:flex-row md:items-center">
-            <Link to="/politicadeprivacidad" className=" text-white font-medium text-xs not-italic underline hover:text-turquee mr-0 mb-2 sm:mb-0 sm:mr-8">Política de privacidad</Link>
-            <Link to="/politicadeconflictosdeinteres" className="text-white font-medium text-xs not-italic underline hover:text-turquee mb-2 sm:mb-0 sm:mr-8">Términos y condiciones</Link>
-          </div>
-          <TabRedsocial />
-      </div>
+      <Copyrigth />
     </footer>
   )
 }

@@ -8,7 +8,8 @@ import { Fecha } from '../Fecha'
 import { Navbar } from './navbar'
 import { Button } from '../Assistant/buttonPurple'
 import { ButtonWhite } from '../Assistant/buttonWhite'
-import { Login } from '../Login'
+//import { Login } from '../Login'
+import { menu } from '../Contents/listmenu'
 //import { Login } from '../Login'
 
 export const Header = () => {
@@ -36,7 +37,7 @@ export const Header = () => {
           <Button text="Login in" dir='/'  />
         </div>
       </div>
-      <Navbar />
+      <Navbar list={menu} />
     </header>
   )
 }

@@ -2,10 +2,12 @@ import React from 'react'
 import { Header } from '../Header'
 import { Home } from '../Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Servicio } from '../Servicios'
+import { Servicio } from '../Service'
 import { Footer } from '../Footer'
 import { Contact } from '../Contact'
 import { Login } from '../Login'
+import { PageNotFound } from '../PagenNotFound'
+import { RequestService } from '../RequestService'
 
 export const Layout = () => {
   return (
@@ -17,6 +19,8 @@ export const Layout = () => {
             <Route exact path='/servicio' element={<Servicio />}/>
             <Route exact path='/contact' element={<Contact />}/>
             <Route exact path='/login' element={<Login />}/>
+            <Route exact path='/solicitarservicio' element={<RequestService />}/>
+            <Route exact path='' element={<PageNotFound />} />
           </Routes>
         <Footer />
       </BrowserRouter>

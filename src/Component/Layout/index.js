@@ -8,6 +8,8 @@ import { Contact } from '../Contact'
 import { Login } from '../Login'
 import { PageNotFound } from '../PagenNotFound'
 import { RequestService } from '../RequestService'
+import { AboutUs } from '../AboutUs'
+
 
 export const Layout = () => {
   return (
@@ -18,6 +20,7 @@ export const Layout = () => {
             <Route exact path='/' element={<Home />}/>
             <Route exact path='/servicio' element={<Servicio />}/>
             <Route exact path='/contact' element={<Contact />}/>
+            <Route exact path='/aboutus' element={<AboutUs/>} />
             <Route exact path='/login' element={<Login />}/>
             <Route exact path='/solicitarservicio' element={<RequestService />}/>
             <Route exact path='' element={<PageNotFound />} />

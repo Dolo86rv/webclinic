@@ -13,13 +13,13 @@ export const menu=[{
 {
     id:'nosotros',
     description:'Sobre nosotros',
-    href:'/nosotros',
+    href:'/aboutus',
     subMenu:[]
 },
 {
     id:'contacto',
     description:'Contacto',
-    href:'/contacto',
+    href:'/contact',
     subMenu:[]
 },
 {

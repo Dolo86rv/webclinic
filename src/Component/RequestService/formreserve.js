@@ -9,13 +9,13 @@ export const FormReserve = () => {
     }
 
     return (
-    <>
-        <h1 className="texto2 font-semibold text-xl text-center mt-4">Reservar cita</h1>
-        <div className="w-full max-w-xs mx-auto rounded h-[500px] mt-4 border shadow-lg border-c-malva border-opacity-50 shadow-slate-300">
+    <div className="mx-auto">
+        <p className="texto2 bg-c-malva opacity-75 text-c-fondo rounded-t font-semibold text-xl text-center p-2 mt-4 w-48 ml-11">Reservar cita</p>
+        <div className="w-full max-w-sm rounded h-[480px] border shadow-lg border-c-malva border-opacity-50 shadow-slate-300">
             <div className="max-w-[280px] mt-5 text-center mx-auto">
                 <p className="text-sm px-2">Reserve su cita, le llegará un sms de confirmación. Gracias.</p>
             </div>
-            <form className="w-full max-w-[250px] mt-4 ml-[53px]" onSubmit={handleSubmit(onSubmit)}>
+            <form className="w-full max-w-[250px] mt-4 px-6" onSubmit={handleSubmit(onSubmit)}>
                 <div className="py-2">
                     <input className="text-sm" type='text' placeholder='Nombre y Apellidos' {...register('name', { required:true })} />
                 </div>
@@ -41,7 +41,7 @@ export const FormReserve = () => {
                 </div>
             </form>
         </div>
-    </>    
+    </div>    
 )
 }
 /**/

@@ -13,7 +13,31 @@ export const Home = () => {
   return (
     <div className="flex-grow mt-[136px] 4s:mt-[116px] sm:mt-14 max-w-full">
       <div className="flex flex-col justify-end items-end max-w-xs overflow-hidden s:max-w-full s:justify-center s:items-center ">
-          <div className="w-full">
+          <div className="w-full relative">
+            <picture>
+              <source media="(min-width: 1200px)" srcSet={chiromassage} />
+              <source media="(min-width: 800px)" srcSet={chiro1024} />
+              <source media="(min-width: 640px)" srcSet={chiro768}/>
+              <source media="(min-width: 250px)" srcSet={chiro640}/>
+
+              <img src={chiro250} alt='Imagen de fondo' className="max-w-full h-auto" width="100%" />
+            </picture>
+          </div>
+          <div className="absolute">
+            <p className="texto2 font-bold text-c-fondo tracking-wider flex-none text-xl sm:text-4xl md:text-6xl">Salud y bienestar al alcance de todos...</p>
+            <div className="pt-20 text-center hidden md:block">
+              <ButtonTransparent text="Leer más" dir='#section1' />
+            </div>
+          </div>
+      </div>  
+      <Section1 />  
+    </div>
+  )
+}
+
+/*<div className="flex-grow mt-[136px] 4s:mt-[116px] sm:mt-14 max-w-full">
+      <div className="flex flex-col justify-end items-end max-w-xs overflow-hidden s:max-w-full s:justify-center s:items-center ">
+          <div className="relative w-full">
             <picture>
               <source media="(min-width: 1200px)" srcSet={chiromassage} />
               <source media="(min-width: 800px)" srcSet={chiro1024} />
@@ -23,14 +47,12 @@ export const Home = () => {
               <img src={chiro250} alt='' className="max-w-full h-auto" width="100%" />
             </picture>
           </div>
-          <div className="absolute p-8">
+          <div className="absolute z-10 p-8">
             <p className="texto2 font-bold text-c-fondo tracking-wider flex-none text-xl sm:text-4xl md:text-6xl">Salud y bienestar al alcance de todos...</p>
           </div>
-          <div className="absolute mt-64  xl:mt-96 hidden md:block py-1">
+          <div className="absolute mt-64 xl:mt-96 hidden md:block py-1">
             <ButtonTransparent text="Leer más" dir='#section1' />
           </div>
       </div>  
       <Section1 />  
-    </div>
-  )
-}
+    </div>*/

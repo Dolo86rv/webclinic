@@ -7,7 +7,7 @@ import facebook from '../../img/facebok-28x28.webp'
 
 export const TabRedsocial = () => {
     return (
-        <div className="flex items-center -ml-4">
+        <div className="flex items-center mr-10">
             <Link className="" to='/'>
                 <img className="object-cover" src={facebook} width={40} height={40} alt=''/>
             </Link> 

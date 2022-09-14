@@ -4,7 +4,7 @@ import { TabRedsocial } from '../Assistant/tabredsocial'
 
 export const Copyrigth = () => {
   return (
-    <div className="flex flex-col justify-between py-6 px-4 ml-2 sm:flex-row sm:px-14 sm:pt-10 md:pb-6">
+    <div className="flex flex-col justify-between py-6 px-4 ml-2 sm:flex-row sm:px-14 sm:pt-6 md:pb-2">
         <p className="items-center font-medium text-xs text-white not-italic">Copyright © 2022.</p>
         <div className="flex flex-col md:flex-row md:items-center">
           <Link to="/politicadeprivacidad" className=" text-white font-medium text-xs not-italic underline hover:text-turquee mr-0 mb-2 sm:mb-0 sm:mr-8">Política de privacidad</Link>

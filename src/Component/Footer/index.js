@@ -7,8 +7,8 @@ import { Service } from './service'
 export const Footer = () => {
   return (
     <footer>
-      <div className="bg-c-malva w-full mt-12">
-        <div className="max-w-full flex flex-col flex-wrap sm:flex-row sm:justify-between mt-4 mx-2 sm:mx-20 sm:mt-6">
+      <div className="bg-c-malva w-full mt-14">
+        <div className="max-w-7xl mx-4 md:mx-20 grid md:grid-cols-2 1lg:grid-cols-3 gap-12 mt-8 sm:mt-10">
           <AboutUs />
           <Service />
           <Contact />
@@ -18,3 +18,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+

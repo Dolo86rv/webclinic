@@ -4,8 +4,8 @@ import { ListMassage } from '../Contents/listmassage'
 
 export const Service = () => {
     return (
-    <div className="px-6 pt-16 w-1/3 h-[256px]">
-        <div className="pl-6">
+    <div className="pt-0 md:pt-24">
+        <div className="md:pl-6">
             <h2 className="texto1 uppercase tracking-wide text-sm text-c-rose font-semibold pb-3 ">servicios</h2>
             {ListMassage.map((item)=>(
                 <div key={item.id} className="flex flex-col pb-3">

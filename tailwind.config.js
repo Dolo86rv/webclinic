@@ -30,7 +30,9 @@ module.exports = {
         // => @media (min-width: 412px) { ... }
         '2s': '325px',
         '3s': '298px',
-        '4s':'258px'
+        '4s':'258px',
+        '1lg':'991px',
+        
       },
       fontSize: {
         's': '0.5rem',

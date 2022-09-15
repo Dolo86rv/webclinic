@@ -3,8 +3,8 @@ import { ListContact } from '../Contents/listcontac'
 
 export const Contact = () => {
     return (
-    <div className="flex-grow w-1/3 pt-12">
-        <div className="pl-6">
+    <div className="flex-grow w-1/3 pt-16">
+        <div className="pl-6 border-l border-c-rose border-opacity-50">
             <h2 className="texto1 uppercase tracking-wide text-sm text-c-rose font-semibold pb-3">contacto</h2>
             {ListContact.map((item)=>(
             <div key={item.id} className="flex flex-col">

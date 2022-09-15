@@ -6,13 +6,15 @@ import { Service } from './service'
 
 export const Footer = () => {
   return (
-    <footer className="bg-c-malva mt-12 h-full">
-      <div className="max-w-full h-96 flex flex-col flex-wrap justify-between items-center sm:flex-row mt-4 mx-2 sm:mx-20 sm:mt-6">
-        <AboutUs />
-        <Service />
-        <Contact />
+    <footer>
+      <div className="bg-c-malva w-full mt-12">
+        <div className="max-w-full flex flex-col flex-wrap sm:flex-row sm:justify-between mt-4 mx-2 sm:mx-20 sm:mt-6">
+          <AboutUs />
+          <Service />
+          <Contact />
+        </div>
+        <Copyrigth />
       </div>
-      <Copyrigth />
     </footer>
   )
 }

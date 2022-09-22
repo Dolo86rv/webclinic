@@ -1,47 +1,85 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { 
+    FormControl,
+    FormLabel,
+    Input,
+    FormHelperText,
+    VStack,
+    Center,
+    Button,
+    Select,
+    Text,
+    InputGroup,
+    InputLeftAddon,
+    Box,
+} from '@chakra-ui/react'
 
 export const FormReserve = () => {
-    const {register, handleSubmit}= useForm()
+    const {register, handleSubmit, formState:{errors}}= useForm()
 
     const onSubmit=(data)=>{
         console.log(data)
     }
 
     return (
-    <div className="mx-auto">
-        <p className="texto2 bg-c-malva opacity-75 text-c-fondo rounded-t font-semibold text-xl text-center p-2 mt-4 w-48 ml-11">Reservar cita</p>
-        <div className="w-full max-w-sm rounded h-[480px] border shadow-lg border-c-malva border-opacity-50 shadow-slate-300">
-            <div className="max-w-[280px] mt-5 text-center mx-auto">
-                <p className="text-sm px-2">Reserve su cita, le llegará un sms de confirmación. Gracias.</p>
-            </div>
-            <form className="w-full max-w-[250px] mt-4 px-6" onSubmit={handleSubmit(onSubmit)}>
-                <div className="py-2">
-                    <input className="text-sm" type='text' placeholder='Nombre y Apellidos' {...register('name', { required:true })} />
+    <Center m={8}>
+        <VStack>
+            <Text backgroundColor='#3b1a5e' rounded={4} textColor='#ffff' paddingX={4} paddingTop={2}>Reservar cita</Text>
+            <Box w='100%' bg='#ffff' marginTop={0} maxW='sm' borderWidth='1px' borderRadius='lg' borderColor='#3b1a5e' boxShadow='2xl'>
+                <div className="max-w-[280px] mt-5 text-center mx-auto">
+                    <p className="text-sm px-2">Reserve su cita, le llegará un sms de confirmación. Gracias.</p>
                 </div>
-                <div className="py-2">
-                    <input className="text-sm" type='text' placeholder='Número de teléfono' {...register('telefono', { required:true })}/>
-                </div>
-                <div className="py-2">
-                    <input className="text-sm" type='text' placeholder='Seleccionar fecha' {...register('fecha', { required:true })} />
-                </div>
-                <div className="py-2">
-                    <input className="text-sm" type='text' placeholder='Selecionar hora' {...register('hora', { required:true })} />
-                </div>
-                <div className="py-2">
-                    <select className="text-sm" {...register('servicio', { required:true })}>
-                        <option value="">Seleccione el servicio</option>
-                        <option value="relajante">Masaje Relajante</option>
-                        <option value="tonificante">Masaje Tonificante</option>
-                        <option value="deportivo">Quiromasaje Deportivo</option>
-                    </select>
-                </div>
-                <div className="mt-4 ml-12">
-                    <input type="submit" value="Reservar" className="bg-c-malva opacity-75 text-c-fondo rounded-md py-1 px-5 hover:opacity-50" />
-                </div>
-            </form>
-        </div>
-    </div>    
+                <form onSubmit={handleSubmit(onSubmit)} className="m-4">
+                    <FormControl p={2}>
+                        <Input type='text' placeholder='Nombre y Apellidos' size='md' {...register('name', { required:true })} />
+                        {errors.name?.type==='required' && <Text paddingTop={2} fontSize={12}  color='red.700'>Introduzca el nombre por favor</Text> }
+                        <FormHelperText fontSize={10}>Debe escribir su nombre completo</FormHelperText>
+                    </FormControl>
+                    <FormControl p={2}>
+                        <InputGroup>
+                            <InputLeftAddon children='+34' />
+                            <Input type='tel' placeholder='Teléfono' name='telefono' size='md' {...register('telefono', 
+                            {
+                                required:{
+                                    value:true,
+                                    message:'El campo es requerido'
+                                }, 
+                                pattern:{
+                                    value:[0-9],
+                                    message:'Introduzca el numero de telefono correctamente'
+                                    }
+                            })} />
+                            {errors.name?.type === 'required' && <span>{errors.name?.message}</span>}
+                            {errors.name?.type === 'pattern' && <span>{errors.name?.message}</span>}
+                        </InputGroup>
+                    <FormHelperText fontSize={10}>Debe escribir su numero de telefono</FormHelperText>
+                    </FormControl>
+                    <FormControl p={2}>
+                        <Input type='text' placeholder='Fecha' size='md' {...register('fecha', { required:true })} />
+                        {errors.required && <span>Introduzca una fecha por favor</span> }
+                        <FormHelperText fontSize={10}>Debe seleccionar la fecha</FormHelperText>
+                    </FormControl>
+                    <FormControl p={2}>
+                        <Input type='text' placeholder='Hora' size='md' {...register('hora', { required:true })} />
+                        <FormHelperText fontSize={10}>Debe seleccionar la hora</FormHelperText>
+                        {errors.required && <span>Introduzca una hora</span> }
+                    </FormControl>
+                    <FormControl p={2}>
+                        <FormLabel>Servicios</FormLabel>
+                        <Select placeholder='Selecciona la opcion' {...register('servicio', { required:true })}>
+                            <option value="relajante">Masaje Relajante</option>
+                            <option value="tonificante">Masaje Tonificante</option>
+                            <option value="deportivo">Quiromasaje Deportivo</option>
+                        </Select>
+                        {errors.required && <span>Seleccione un servicio por favor</span> }
+                    </FormControl>
+                    <Center>
+                        <Button marginTop={4} bg='#3b1a5e' textColor='#ffff' opacity='75%' type="submit">Reservar</Button>
+                    </Center>
+                </form>
+            </Box>
+        </VStack> 
+    </Center>   
 )
 }
-/**/

@@ -6,6 +6,7 @@ import chiro250 from '../../img/quiromasaje-250.avif'
 import chiro640 from '../../img/quiromasaje-640.avif'
 import chiro768 from '../../img/quiromasaje-768.avif'
 import chiro1024 from '../../img/quiromasaje-1024.avif'
+import { Galeria } from './section2'
 
 export const Home = () => {
   
@@ -31,6 +32,7 @@ export const Home = () => {
           </div>
       </div>  
       <Section1 />  
+      <Galeria />
     </div>
   )
 }

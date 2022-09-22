@@ -6,7 +6,7 @@ export const Section1 = () => {
   return (
     <div className="pt-16 sm:pt-20" id="section1">
       <h1 className="text-center text-c-malva text-xl pb-20 sm:pb-24 font-medium sm:text-4xl">¿Qué sabes de quiromasaje?</h1>
-      <div className="flex flex-wrap justify-between px-6 mx-0 sm:mx-20">
+      <div className="flex flex-wrap justify-between items-center px-6 mx-0 sm:mx-20">
       {ListData.map((item)=>(
       <div key={item.id} className="max-w-sm my-2 bg-slate-100 rounded-xl shadow-md overflow-hidden">
         <div>

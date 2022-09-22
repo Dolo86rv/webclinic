@@ -23,8 +23,8 @@ export const menu=[{
     subMenu:[]
 },
 {
-    id:'solicitarServicio',
-    description:'Solicitar servicio',
-    href:'/solicitarservicio',
+    id:'reserva',
+    description:'Reserva',
+    href:'/reserve',
     subMenu:[]
 }]

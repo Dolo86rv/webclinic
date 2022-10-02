@@ -6,7 +6,7 @@ import twitter from '../../img/twitt-28x28.webp'
 import facebook from '../../img/facebok-28x28.webp'
 import { Fecha } from '../Fecha'
 import { Navbar } from './navbar'
-import { Button } from '../Assistant/buttonPurple'
+import { ButtonPurple } from '../Assistant/buttonPurple'
 import { ButtonWhite } from '../Assistant/buttonWhite'
 //import { Login } from '../Login'
 import { menu } from '../Contents/listmenu'
@@ -34,7 +34,7 @@ export const Header = () => {
         <Fecha />
         <div className="ml-1 my-4 sm:ml-0 sm:my-1 mr-4">
           <ButtonWhite text="Buscar" dir='/' />
-          <Button text="Login in" dir='/'  />
+          <ButtonPurple text="Login in" dir='/login'  />
         </div>
       </div>
       <Navbar list={menu} />

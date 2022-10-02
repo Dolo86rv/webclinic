@@ -9,7 +9,7 @@ export const ListData=[
     {
       id:'beneficios',
       title:'Beneficios',
-      description:['Aumenta la temperatura de la piel.','Estimula la circulación sanguínea y linfática del cuerpo.','Estira los tejidos blandos eliminando posibles adherencias.','Oxigena la sangre.', 'Estimula y relaja músculos, tendones y el sistema nervioso en general.'],
+      description:'Aumenta la temperatura de la piel. Estimula la circulación sanguínea y linfática del cuerpo. Estira los tejidos blandos eliminando posibles adherencias. Oxigena la sangre. Estimula y relaja músculos, tendones y el sistema nervioso en general. Recomendable para tratar la ciática o la lumbalgia, esguinces, tortícolis...',
       href:'/ventajas',
       src: require('../../img/quiro2.webp')
     },

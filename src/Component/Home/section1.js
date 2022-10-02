@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../Assistant/buttonPurple'
+import { ButtonPurple } from '../Assistant/buttonPurple'
 import { ListData } from '../Contents/listdata'
 
 export const Section1 = () => {
@@ -19,7 +19,7 @@ export const Section1 = () => {
                 <li className="mt-2 text-slate-500 justify-center items-center">{item.description}<br/></li>
               </ul>
             <div className="pt-8 pl-0 3s:pl-20 1s:pl-52">
-              <Button text="Leer más" dir='/'/>
+              <ButtonPurple text="Leer más" dir='/'/>
             </div>
           </div>
         </div>

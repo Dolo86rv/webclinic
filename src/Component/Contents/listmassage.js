@@ -2,16 +2,16 @@ export const ListMassage=[
     {
         id:'mmassage1',
         description:'Masaje relajante',
-        href:'/'
+        href:'/servicio#masaje_relajante'
     },
     {
         id:'mmassage2',
         description:'Masaje tonificante',
-        href:'/'
+        href:'/servicio#masaje_tonificante'
     },
     {
         id:'mmassage3',
         description:'Quiromasaje deportivo',
-        href:'/'
+        href:'/servicio#quiromasaje_deportivo'
     }
 ]

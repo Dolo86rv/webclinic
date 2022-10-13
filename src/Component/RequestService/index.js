@@ -13,7 +13,7 @@ export const RequestService = () => {
             </div>
             <div className="absolute max-w-7xl grid grid-cols-2 gap-4 mx-10 ">
                 <div className="mx-8 mt-20">
-                    <div className=" bg-c-malva text-c-fondo rounded ">
+                    <div className=" bg-c-malva opacity-60 text-c-fondo rounded ">
                         <div className="p-4">
                             <p className="pt-1">Reservar Online es la mejor opción para pedir una cita. Es muy sencillo. ¡Sólo tienes que Rellenar los datos personales, seleccionar el servicio que prefieres, especificar el día y hora en el que deseas Disfrutar de un buen masaje!. Se aconseja reservar con 24 horas de antelación.</p>
                             <p className="pt-1">También puedes reservar por teléfono o WhatsApp  +34 609 592636 o bien vía email a veronica.orellana@gmail.com.</p>

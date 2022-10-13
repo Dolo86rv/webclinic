@@ -5,14 +5,12 @@ import { ListMassage } from '../Contents/listmassage'
 export const Service = () => {
     return (
     <div className="pt-0 md:pt-24">
-        <div className="md:pl-6">
-            <h2 className="texto1 uppercase tracking-wide text-sm text-c-rose font-semibold pb-3 ">servicios</h2>
+        <Link to='/servicio' className="texto1 uppercase tracking-wide text-sm text-c-rose font-semibold">servicios</Link>
             {ListMassage.map((item)=>(
-                <div key={item.id} className="flex flex-col pb-3">
-                    <Link to={item.href} className="text-c-fondo opacity-75">{item.description}</Link>
+                <div key={item.id} className="flex flex-col pt-3">
+                    <Link to={item.href} className="text-c-fondo opacity-75 hover:text-c-rose">{item.description}</Link>
                 </div>
             ))}
-        </div>
     </div>
     )
 }

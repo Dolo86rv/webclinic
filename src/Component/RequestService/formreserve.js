@@ -25,8 +25,8 @@ export const FormReserve = () => {
     return (
     <Center m={8}>
         <VStack>
-            <Text backgroundColor='#3b1a5e' rounded={4} textColor='#ffff' paddingX={4} paddingTop={2}>Reservar cita</Text>
-            <Box w='100%' bg='#ffff' marginTop={0} maxW='sm' borderWidth='1px' borderRadius='lg' borderColor='#3b1a5e' boxShadow='2xl'>
+            <Text backgroundColor='#3b1a5e' roundedTop={4} textColor='#ffff' paddingX={8} paddingTop={2}>Reservar cita</Text>
+            <Box marginTop={0} w='100%' bg='#ffff' maxW='sm' borderWidth='1px' borderRadius='lg' borderColor='#3b1a5e' boxShadow='2xl'>
                 <div className="max-w-[280px] mt-5 text-center mx-auto">
                     <p className="text-sm px-2">Reserve su cita, le llegará un sms de confirmación. Gracias.</p>
                 </div>

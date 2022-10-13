@@ -10,7 +10,6 @@ import { PageNotFound } from '../PagenNotFound'
 import { RequestService } from '../RequestService'
 import { AboutUs } from '../AboutUs'
 
-
 export const Layout = () => {
   return (
     <div className="flex flex-col h-screen w-full">

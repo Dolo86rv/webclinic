@@ -9,6 +9,8 @@ import { Login } from '../Login'
 import { PageNotFound } from '../PagenNotFound'
 import { RequestService } from '../RequestService'
 import { AboutUs } from '../AboutUs'
+import { SearchResult } from '../SearchResult'
+import { Register } from '../Register'
 
 export const Layout = () => {
   return (
@@ -23,6 +25,8 @@ export const Layout = () => {
             <Route exact path='/login' element={<Login />}/>
             <Route exact path='/reserve' element={<RequestService />}/>
             <Route exact path='' element={<PageNotFound />} />
+            <Route exact path='/search/:keyword' element={< SearchResult />} />
+            <Route exact path='/register' element={ <Register />} />
           </Routes>
         <Footer />
       </BrowserRouter>

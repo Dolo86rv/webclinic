@@ -2,36 +2,35 @@ import React, { useState } from 'react'
 import { ButtonPurple } from '../Assistant/buttonPurple'
 import { useLocation } from 'wouter'
 
-export const SearchResult = () => {
+export const FormSearch = () => {
     const isLogged=false
-    const [active, setActive]=useState(false)
     const [keyword, setKeyword]=useState('')
     const [path, pushLocation]=useLocation()
+    
   //console.log(path)
 
-    const handleSubmit=evt=>{
+    const handleSubmit = evt => {
         evt.preventDefault()
-        console.log(keyword)
-        pushLocation(`/${keyword}`)
+        pushLocation(`/search/${keyword}`)
     }
 
-    const handleChange=evt=>{
+    const handleChange = evt => {
         setKeyword(evt.target.value)
-    }
-
-    const handleClick=()=>{
-        setActive(!active)
     }
 
     return (
         <div className="flex ml-1 my-4 sm:ml-0 sm:my-1 mr-4">
-            <form className="flex" onSubmit={handleSubmit}>
-                {active && 
+            <form className="flex" onSubmit={handleSubmit} id="formulario">
                 <div>
-                    <input onChange={handleChange} type="text" placeholder='Buscar' className="rounded-md " />
+                    <input 
+                        className="rounded-md"
+                        onChange={handleChange}
+                        placeholder='Buscar'
+                        type="text" 
+                        value={keyword}
+                    />
                 </div>
-                }
-                <button onClick={handleClick} className="bg-c-fondo rounded py-1 px-4 mx-4 hover:opacity-75">
+                <button className="bg-c-fondo rounded py-1 px-4 mx-4 hover:opacity-75">
                 <span className="text-c-malva">Buscar</span>
                 </button>
             </form>

@@ -16,10 +16,11 @@ import {
 } from '@chakra-ui/react'
 
 export const FormReserve = () => {
-    const {register, handleSubmit, formState:{errors}}= useForm()
+    const {register, handleSubmit, reset, formState:{errors}}= useForm()
 
     const onSubmit=(data)=>{
         console.log(data)
+        reset()
     }
 
     return (
@@ -50,8 +51,8 @@ export const FormReserve = () => {
                                     message:'Introduzca el numero de telefono correctamente'
                                     }
                             })} />
-                            {errors.name?.type === 'required' && <span>{errors.name?.message}</span>}
-                            {errors.name?.type === 'pattern' && <span>{errors.name?.message}</span>}
+                            {errors.telefono?.type === 'required' && <span>{errors.telefono?.message}</span>}
+                            {errors.telefono?.type === 'pattern' && <span>{errors.telefono?.message}</span>}
                         </InputGroup>
                     <FormHelperText fontSize={10}>Debe escribir su numero de telefono</FormHelperText>
                     </FormControl>

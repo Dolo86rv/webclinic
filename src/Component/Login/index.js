@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { HashLink as Link} from 'react-router-hash-link'
 import { useForm } from 'react-hook-form'
-import { useLocation } from 'wouter'
+import { HashLink as Link } from 'react-router-hash-link'
+import { useLocation} from 'wouter'
 //import { Menu } from '@headlessui/react'
 //import { Fragment } from 'react'
 
@@ -53,7 +53,7 @@ export const Login = () => {
           <div className="mt-3 max-w-sm border border-c-malva border-opacity-50 rounded-md">
             <div className="flex justify-center items-center py-3">
               <p className="pr-1">¿Aún no tienes cuenta?.</p>
-              <Link to="/" className="italic font text-c-rose">Regístrate</Link>
+              <Link to='/register' className="italic font text-c-rose">Regístrate</Link>
             </div>
           </div> 
         </div>

@@ -22,7 +22,7 @@ const redes=[
 
 export const TabRedsocial = () => {
     return (
-        <div className="flex items-center md:mr-10 py-4">
+        <div className="flex items-center md:mx-10 py-4">
             {redes.map(item =>(
                 <Link className="mx-2" to='/'>
                     <img className="object-cover flex-none" src={item.src} width={20} height={20} alt={item.id}/>
